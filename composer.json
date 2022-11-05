@@ -1,0 +1,17 @@
+{
+    "name": "comfypad/lab4",
+    "require": {
+        "smarty/smarty": "^4.2",
+        "smarty/smarty-lexer": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Comfypad\\Lab4\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "a71311"
+        }
+    ]
+}

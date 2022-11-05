@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <meta http-equiv="refresh" content="3; url=index.php" />
+
+    <meta name="author" content="Quevin"/>
+    <meta name="generator" content="Quevin"/>
+    <meta name="description" content="Inside the wall you are now"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  </head>
+
+  <body>
+  <p style="text-align:center;">
+  <img src="images/1661722159822-0.jpg" style="max-width:428px;">
+  </p>
+  <h1 align="center">{$MESSAGE}</h1>
+  <body>
+</html>

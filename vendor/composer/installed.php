@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'comfypad/lab4',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'comfypad/lab4' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'smarty/smarty' => array(
+            'pretty_version' => 'v4.2.1',
+            'version' => '4.2.1.0',
+            'reference' => 'ffa2b81a8e354a49fd8a2f24742dc9dc399e8007',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../smarty/smarty',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'smarty/smarty-lexer' => array(
+            'pretty_version' => 'v3.1.33',
+            'version' => '3.1.33.0',
+            'reference' => 'e0ee2739c93c717b18ed703a54073a8f55e9f646',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../smarty/smarty-lexer',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
