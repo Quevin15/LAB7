@@ -4,7 +4,7 @@ include 'db.php';
 
 session_start();
 
-require_once('vendor/smarty/smarty/libs/Smarty.class.php');
+require_once('/usr/share/php/smarty/libs/Smarty.class.php');
 $smarty = new Smarty();
 
 $smarty->template_dir = 'templates';

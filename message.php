@@ -2,7 +2,7 @@
 
   session_start();
 
-  require('/usr/local/lib/php/Smarty/Smarty.class.php');
+ require_once('/usr/share/php/smarty/libs/Smarty.class.php');
   $smarty = new Smarty();
 
 
