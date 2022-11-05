@@ -1,27 +1,31 @@
-<?php
-/* Smarty version 4.2.1, created on 2022-11-04 19:30:02
-  from '/opt/lampp/htdocs/LAB4/templates/login_template.tpl' */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_63655a2a1c1136_57826242',
-  'has_nocache_code' => false,
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2022-11-05 23:00:15
+         compiled from "templates/login_template.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:9514993046366eaff21a857-16758570%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '9b4bf0f393692b89df4cceccd942ef3fd2b7ba83' => 
+    'b5e2fef7b8e87d1665941f3cf7aa771e19ff4d81' => 
     array (
-      0 => '/opt/lampp/htdocs/LAB4/templates/login_template.tpl',
-      1 => 1667586598,
+      0 => 'templates/login_template.tpl',
+      1 => 1667684960,
       2 => 'file',
     ),
   ),
-  'includes' => 
+  'nocache_hash' => '9514993046366eaff21a857-16758570',
+  'function' => 
   array (
   ),
-),false)) {
-function content_63655a2a1c1136_57826242 (Smarty_Internal_Template $_smarty_tpl) {
-?><!DOCTYPE html>
+  'variables' => 
+  array (
+    'MESSAGE' => 0,
+    'email' => 0,
+    'pwd' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_6366eaff240c29_07127807',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_6366eaff240c29_07127807')) {function content_6366eaff240c29_07127807($_smarty_tpl) {?><!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
@@ -76,7 +80,7 @@ function content_63655a2a1c1136_57826242 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 
 
-<?php if ($_smarty_tpl->tpl_vars['MESSAGE']->value != '') {?>
+<?php if ($_smarty_tpl->tpl_vars['MESSAGE']->value!='') {?>
    <p><?php echo $_smarty_tpl->tpl_vars['MESSAGE']->value;?>
 </p>
 <?php }?>
@@ -115,5 +119,4 @@ function content_63655a2a1c1136_57826242 (Smarty_Internal_Template $_smarty_tpl)
   </body>
 </html>
 
-<?php }
-}
+<?php }} ?>

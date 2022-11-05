@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "localhost";
+$hostname = "10.10.23.184";
 $db_name = "db_a71311";
 $db_user = "a71311";
-$db_passwd = "tho7x";
+$db_passwd = "6c1e60";
 
 // mostra uma mensagem de erro vinda do mysql
 function showerror($db)

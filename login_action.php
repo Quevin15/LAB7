@@ -22,7 +22,6 @@ $query = "SELECT * FROM users
          WHERE email = '$email'
            AND password_digest = '$pwd'";
 
-
 $result = @ mysqli_query($db, $query);
 if (!$result)
      showerror($db);

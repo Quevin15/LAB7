@@ -4,15 +4,6 @@ include("db.php");
 
 session_start();
 
-// CSRF safeguard, expected origin URL: $_SERVER['HTTP_REFERER'] = 'http://intranet.deei.fct.ualg.pt/DAW/auth-db-sessions/register.php'
-/*
-$match=preg_match("/\/DAW\/auth-db-sessions\/register.php$/", $_SERVER['HTTP_REFERER']);
-if(!$match) {
-   header("Location: index_smarty.php");
-       exit;
-}
-*/
-
 if(isset($_POST['Clear'])) {
   // Display the user signup form
   unset($_SESSION['new_name']);
@@ -128,10 +119,6 @@ else {
   // Close database
   mysqli_close($db);
 
-/* email deactivated to avoid fake emails
-mail($_POST['new_email'],"Your Password for the Website",
-       $message, "From:Figo <figo@deei.fct.ualg.pt>");
-*/
   $_SESSION['message_type'] = 1;
   unset($_SESSION['message_error']);
   header("Location: register_success.html");

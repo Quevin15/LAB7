@@ -1,29 +1,33 @@
-<?php
-/* Smarty version 4.2.1, created on 2022-11-04 20:47:28
-  from '/opt/lampp/htdocs/LAB4/templates/index_template.tpl' */
-
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_63656c509337e2_81395726',
-  'has_nocache_code' => false,
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2022-11-05 23:00:12
+         compiled from "templates/index_template.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:6945568236366eafce08fc6-01535175%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '973423fada02a988579c11f048871272efdb6223' => 
+    'fd454367c3a608422d0106c54863d101df4b925e' => 
     array (
-      0 => '/opt/lampp/htdocs/LAB4/templates/index_template.tpl',
-      1 => 1667591238,
+      0 => 'templates/index_template.tpl',
+      1 => 1667684960,
       2 => 'file',
     ),
   ),
-  'includes' => 
+  'nocache_hash' => '6945568236366eafce08fc6-01535175',
+  'function' => 
   array (
   ),
-),false)) {
-function content_63656c509337e2_81395726 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/usr/local/lib/php/Smarty/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
-?>
-<!DOCTYPE html>
+  'variables' => 
+  array (
+    'USER' => 0,
+    'MICROPOSTS' => 0,
+    'micropost' => 0,
+    'NAMES' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_6366eafce7fa76_10122874',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_6366eafce7fa76_10122874')) {function content_6366eafce7fa76_10122874($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/usr/share/php/smarty3/plugins/modifier.date_format.php';
+?><!DOCTYPE html>
 
 <html>
   <head>
@@ -60,7 +64,7 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/usr/local/lib/php/Smarty/pl
 
     <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
          <ol class="breadcrumb">
-          <?php if ((isset($_smarty_tpl->tpl_vars['USER']->value))) {?>
+          <?php if (isset($_smarty_tpl->tpl_vars['USER']->value)) {?>
            <li class="breadcrumb-item active" aria-current="page">/<?php echo $_smarty_tpl->tpl_vars['USER']->value['name'];?>
 </li>
            <?php } else { ?>
@@ -72,14 +76,14 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/usr/local/lib/php/Smarty/pl
 
             <div class="col-8" style="text-align:right;">
 
-              <?php if ((isset($_smarty_tpl->tpl_vars['USER']->value))) {?>
+              <?php if (isset($_smarty_tpl->tpl_vars['USER']->value)) {?>
               <a href="./logout_action.php">logout</a>
               <a href=#>post blog</a>
               <?php } else { ?>
               <a href="./login.php">login</a>
               <a href="./register.php">register</a>
               <?php }?>
-              <a href=#>Welcome <?php echo (($tmp = $_smarty_tpl->tpl_vars['USER']->value['name'] ?? null)===null||$tmp==='' ? "anon" ?? null : $tmp);?>
+              <a href=#>Welcome <?php echo (($tmp = @$_smarty_tpl->tpl_vars['USER']->value['name'])===null||$tmp==='' ? "anon" : $tmp);?>
 </a>
            </div>
           </div>
@@ -92,11 +96,10 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/usr/local/lib/php/Smarty/pl
       <div class="row">
 
 
-<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['MICROPOSTS']->value, 'micropost');
-$_smarty_tpl->tpl_vars['micropost']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['micropost']->value) {
-$_smarty_tpl->tpl_vars['micropost']->do_else = false;
+<?php  $_smarty_tpl->tpl_vars['micropost'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['micropost']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['MICROPOSTS']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['micropost']->key => $_smarty_tpl->tpl_vars['micropost']->value) {
+$_smarty_tpl->tpl_vars['micropost']->_loop = true;
 ?>
         <div class="col-md-6">
     <div class="blogPost">
@@ -155,7 +158,7 @@ $_smarty_tpl->tpl_vars['micropost']->do_else = false;
     </p>
     </div>
       <div class="col">
-      <?php if ($_smarty_tpl->tpl_vars['USER']->value['id'] == $_smarty_tpl->tpl_vars['micropost']->value['user_id']) {?>
+      <?php if ($_smarty_tpl->tpl_vars['USER']->value['id']==$_smarty_tpl->tpl_vars['micropost']->value['user_id']) {?>
         <a href="#" class="card-link">update</a>
       <?php }?>
     </div>
@@ -164,9 +167,7 @@ $_smarty_tpl->tpl_vars['micropost']->do_else = false;
 </div>
     </div>
       </div>
-      <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+      <?php } ?>
       </div>
     </div>
     </div>
@@ -181,5 +182,4 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </footer>
   </body>
 </html>
-<?php }
-}
+<?php }} ?>
